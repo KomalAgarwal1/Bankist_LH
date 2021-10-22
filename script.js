@@ -167,6 +167,12 @@ const updateUI = function (acc) {
 
 //Event handler
 let currentAccount;
+
+//FAKE LOGIN
+currentAccount= account1;
+updateUI(currentAccount);
+containerApp.style.opacity=100;
+
 btnLogin.addEventListener('click', function (e) {
   e.preventDefault();
   // console.log('login');
