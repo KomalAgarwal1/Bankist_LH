@@ -213,7 +213,7 @@ btnTransfer.addEventListener('click', function (e) {
     receiver.movements.push(amount);
   }
   updateUI(currentAccount);
-  inputTransferAmount.value = inputTransferTo.value = '';
+//   inputTransferAmount.value = inputTransferTo.value = '';
 });
 
 //Loan
