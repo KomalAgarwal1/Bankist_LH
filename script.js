@@ -189,8 +189,8 @@ btnLogin.addEventListener('click', function (e) {
   containerApp.style.opacity = 100;
 
   //Clear input fields
-  inputLoginUsername.value = inputLoginPin.value = '';
-  inputLoginPin.blur();
+//   inputLoginUsername.value = inputLoginPin.value = '';
+//   inputLoginPin.blur();
 
   //Update UI
   updateUI(currentAccount);
@@ -330,25 +330,25 @@ const currencies = new Map([
 
 // checkDogs(dogsJulia, dogsKate);
 
-// const calcAverageHumanAge1 = function (mergeArr) {
-//   const humanAges = mergeArr.map(age => (age <= 2 ? 2 * age : 16 + age * 4));
-//   console.log(humanAges);
+const calcAverageHumanAge1 = function (mergeArr) {
+  const humanAges = mergeArr.map(age => (age <= 2 ? 2 * age : 16 + age * 4));
+  console.log(humanAges);
 
-//   const adults = humanAges.filter(age => age >= 18);
-//   console.log(adults);
+  const adults = humanAges.filter(age => age >= 18);
+  console.log(adults);
 
-//   const avg = adults.reduce((acc, age, i, arr) => acc + age / arr.length, 0);
-//   return avg;
-// };
+  const avg = adults.reduce((acc, age, i, arr) => acc + age / arr.length, 0);
+  return avg;
+};
 
 // console.log(calcAverageHumanAge1([5, 2, 4, 1, 15, 8, 3]));
 
-// //using arrow func and chaining
-// const calcAverageHumanAge = mergeArr =>
-//   mergeArr
-//     .map(age => (age <= 2 ? 2 * age : 16 + age * 4))
-//     .filter(age => age >= 18)
-//     .reduce((acc, age, i, arr) => acc + age / arr.length, 0);
+//using arrow func and chaining
+const calcAverageHumanAge = mergeArr =>
+  mergeArr
+    .map(age => (age <= 2 ? 2 * age : 16 + age * 4))
+    .filter(age => age >= 18)
+    .reduce((acc, age, i, arr) => acc + age / arr.length, 0);
 
 // console.log(calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]));
 
